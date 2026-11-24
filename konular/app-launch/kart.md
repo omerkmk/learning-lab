@@ -57,7 +57,13 @@ dosyası olmadan pencere kurulur. UIKit projesinde kullanmıyoruz.
 
 ## Projede nerede
 
-_(SubTrack `chore/programmatic-root` görevinden sonra doldurulacak: `SceneDelegate.swift:satır`)_
+SubTrack `SubTrack/SceneDelegate.swift`, `scene(_:willConnectTo:options:)` (PR #1, `bbace74`):
+
+- `:18` `guard let windowScene = (scene as? UIWindowScene)`: `UIScene` → `UIWindowScene` downcast
+- `:19` `UIWindow(windowScene:)`: pencere sahneye bağlanarak oluşturulur
+- `:22` `window.rootViewController = rootVC`: ilk ekran (şimdilik geçici, sonra Coordinator)
+- `:23` `self.window = window`: strong referans; yoksa ARC deallocate eder → siyah ekran
+- `:24` `window.makeKeyAndVisible()`: `viewDidLoad` burada tetiklenir
 
 ## Mülakat sorusu ve benim cevabım
 

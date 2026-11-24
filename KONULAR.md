@@ -7,7 +7,7 @@ Kart: konu kartının yolu (`konular/<konu>/kart.md`); boşsa henüz kart yok.
 
 | Konu | Durum | Son tekrar | Kart |
 |---|---|---|---|
-| Uygulama açılışı: UIWindow, AppDelegate / SceneDelegate, açılış sırası | ⬜ | | [konular/app-launch/kart.md](konular/app-launch/kart.md) |
+| Uygulama açılışı: UIWindow, AppDelegate / SceneDelegate, açılış sırası | 🔄 | 24 Kasım 2026 | [konular/app-launch/kart.md](konular/app-launch/kart.md) |
 | Swift temelleri: optionals, closures, enum, protocol, class/struct | ⬜ | | |
 | Para ve tarih: `Decimal`, `Calendar` | ⬜ | | |
 | Generics (generic network katmanı) | ⬜ | | |
